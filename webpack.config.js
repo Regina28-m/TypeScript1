@@ -1,4 +1,3 @@
-
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -9,13 +8,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'ts-loader',
-        },
-      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -38,9 +30,6 @@ module.exports = {
         ],
       },
     ],
-  },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
     new HtmlWebPackPlugin({

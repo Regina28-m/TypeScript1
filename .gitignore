@@ -1,5 +1,7 @@
 dist
 doc
+.idea
+package-lock.json
 
 # Logs
 logs
